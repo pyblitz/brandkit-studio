@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brandkit-studio"
+version = "0.1.0"
+description = "Generate a consistent mini brand kit (logo, social post, thumbnail) from a name and a two-colour palette."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["Pillow>=10"]
+
+[project.scripts]
+brandkit = "brandkit.cli:main"
+
+[tool.setuptools]
+packages = ["brandkit"]
